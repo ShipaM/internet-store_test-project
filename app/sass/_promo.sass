@@ -1,0 +1,26 @@
+.promo-prev
+	display: flex 
+	& > *
+		flex: 1
+		border-radius: 4px
+		&:not(:last-child)
+			margin-right: 30px
+	&__item
+		border-radius: 4px
+		overflow: hidden	
+	&__header
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		display: flex
+		align-items: flex-end
+		padding: 20px
+		height: 185px
+	&__body
+		background-color: $white
+		padding: 15px 20px
+	&__text
+		display: flex
+		flex-direction: column
+	&__title
+		font-size: 22px

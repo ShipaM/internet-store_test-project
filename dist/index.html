@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/main.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="header-top__location location">
+              <div class="location__header"><i class="fas fa-map-marker-alt"></i><span class="location__current">Нижний Новгород</span></div>
+              <div class="location__body"></div>
+            </div>
+            <nav class="header-top__main-nav main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Оплата и доставка</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Гарантия</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Услуги</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Компания	</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты		</a></li>
+              </ul>
+            </nav>
+            <div class="header-top__user-nav user-nav"><a class="user-nav__link link-green" href="#">Войти</a></div>
+          </div>
+        </div>
+        <div class="header-main">
+          <div class="container">
+            <div class="header-main__logo logo">
+              <div class="logo__img"><img src="img/logotip.png" alt="логотип"></div>
+            </div>
+            <div class="header-main__catalog-nav catalog-nav">
+              <div class="catalog-nav__header">
+                <div class="sandwich">
+                  <div class="sandwich__line sandwich__line_top"></div>
+                  <div class="sandwich__line sandwich__line_middle"></div>
+                  <div class="sandwich__line sandwich__line_bottom"></div>
+                </div><span class="catalog-nav__title">Каталог стойматериалов</span>
+              </div>
+              <div class="catalog-nav__body"></div>
+            </div>
+            <div class="header-main__search search">
+              <input class="input-field input-field_size-small" placeholder="Артикул или название товара"><i class="fas fa-search"></i>
+            </div>
+            <div class="header-main__order-callback order-callback"><span class="order-callback__description">Звоните круглосуточно</span><a class="order-callback__phone" href="tel:+74993348888">+7 499 334-88-88</a><a class="order-callback__link link-white link-underline" href="#">Заказать звонок</a></div>
+            <div class="header__basket-prev basket-prev"><i class="fas fa-shopping-basket"></i><span class="basket-prev__title">Ваш заказ</span><span class="basket-prev__count">здесь пока пусто</span></div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <section class="s-banner" style="background-image: url(../img/banner.jpg)">
+          <div class="container">
+            <div class="banner">
+              <h1 class="title-page">Продажа строительных материалов от производителя</h1>
+              <p class="banner__text">Текст о компании, который может пригодиться для первичного знакомства с посетителем сайта, а также для целей поискового продвижения</p>
+            </div>
+          </div>
+        </section>
+        <section class="s-popular-categories">
+          <div class="container">
+            <div class="popular-categories">
+              <div class="popular-categories__header">
+                <div class="section-header"> 
+                  <h2 class="title-section">Популярные категории каталога</h2>
+                </div>
+              </div>
+            </div>
+            <div class="popular-categories__category-prev category-prev">
+              <div class="categories-prev__btn categories-prev__btn_prev"></div>
+              <div class="categories-prev__btn categories-prev__btn_next"></div>
+              <div class="category-prev-js">
+                <div class="category-prev__slide">
+                  <div class="category-prev__img" style="background-image: url(../img/building_material1.jpg)"></div>
+                  <div class="category-prev__body">
+                    <div class="category-prev__title"><span class="category-prev__title-text">Водосточные системы</span><span class="category-prev__count">1234</span></div>
+                    <ul class="category-prev__list">
+                      <li class="category-prev__item"><a class="category-prev__link">Комплекты водосточных систем</a><span class="category-prev__count">23</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Водосточные трубы</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Желоб водосточный</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Воронка желоба выпускная</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"> <a class="category-prev__link green-link">Все водосточные системы</a><span class="category-prev__count">7</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-prev__slide">
+                  <div class="category-prev__img" style="background-image: url(../img/building_material2.jpg)"></div>
+                  <div class="category-prev__body">
+                    <div class="category-prev__title"><span class="category-prev__title-text">Кровля</span><span class="category-prev__count">1234</span></div>
+                    <ul class="category-prev__list">
+                      <li class="category-prev__item"><a class="category-prev__link">Металлочерепица</a><span class="category-prev__count">23</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Элементы безопасности кровли</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Лестницы</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Мостики кровельные</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"> <a class="category-prev__link green-link">Все водосточные системы</a><span class="category-prev__count">7</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-prev__slide">
+                  <div class="category-prev__img" style="background-image: url(../img/building_material3.jpg)"></div>
+                  <div class="category-prev__body">
+                    <div class="category-prev__title"><span class="category-prev__title-text">Доборные элементы кровли</span><span class="category-prev__count">1234</span></div>
+                    <ul class="category-prev__list">
+                      <li class="category-prev__item"><a class="category-prev__link">Планка стыковочная</a><span class="category-prev__count">23</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Планка ендовы нижняя</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Планка ендовы верхняя</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Планка угла наружного</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"> <a class="category-prev__link green-link">Все водосточные системы</a><span class="category-prev__count">7</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-prev__slide">
+                  <div class="category-prev__img" style="background-image: url(../img/building_material4.jpg)"></div>
+                  <div class="category-prev__body">
+                    <div class="category-prev__title"><span class="category-prev__title-text">Профнастил</span><span class="category-prev__count">1234</span></div>
+                    <ul class="category-prev__list">
+                      <li class="category-prev__item"><a class="category-prev__link"> </a><span class="category-prev__count"> </span></li>
+                      <li class="category-prev__item"><a class="category-prev__link"> </a><span class="category-prev__count"> </span></li>
+                      <li class="category-prev__item"><a class="category-prev__link"> </a><span class="category-prev__count"></span></li>
+                      <li class="category-prev__item"><a class="category-prev__link"> </a><span class="category-prev__count"> </span></li>
+                      <li class="category-prev__item"> <a class="category-prev__link green-link">Все водосточные системы</a><span class="category-prev__count">7</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-prev__slide">
+                  <div class="category-prev__img" style="background-image: url(../img/building_material5.jpg)"></div>
+                  <div class="category-prev__body">
+                    <div class="category-prev__title"><span class="category-prev__title-text">Лист оцинкованный</span><span class="category-prev__count">1234</span></div>
+                    <ul class="category-prev__list">
+                      <li class="category-prev__item"><a class="category-prev__link"> </a><span class="category-prev__count">23</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Водосточные трубы</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Желоб водосточный</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Воронка желоба выпускная</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"> <a class="category-prev__link green-link">Все водосточные системы</a><span class="category-prev__count">7</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-prev__slide">
+                  <div class="category-prev__img" style="background-image: url(../img/building_material6.jpg)"></div>
+                  <div class="category-prev__body">
+                    <div class="category-prev__title"><span class="category-prev__title-text">Штрипс</span><span class="category-prev__count">1234</span></div>
+                    <ul class="category-prev__list">
+                      <li class="category-prev__item"><a class="category-prev__link">Комплекты водосточных систем</a><span class="category-prev__count">23</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Водосточные трубы</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Желоб водосточный</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Воронка желоба выпускная</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"> <a class="category-prev__link green-link">Все водосточные системы</a><span class="category-prev__count">7</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-prev__slide">
+                  <div class="category-prev__img" style="background-image: url(../img/building_material7.jpg)"></div>
+                  <div class="category-prev__body">
+                    <div class="category-prev__title"><span class="category-prev__title-text">Сухие смеси</span><span class="category-prev__count">1234</span></div>
+                    <ul class="category-prev__list">
+                      <li class="category-prev__item"><a class="category-prev__link">Комплекты водосточных систем</a><span class="category-prev__count">23</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Водосточные трубы</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Желоб водосточный</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"><a class="category-prev__link">Воронка желоба выпускная</a><span class="category-prev__count">98</span></li>
+                      <li class="category-prev__item"> <a class="category-prev__link green-link">Все водосточные системы</a><span class="category-prev__count">7</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="category-prev__slide">
+                  <div class="category-prev__img" style="background-image: url(../img/building_material8.jpg)"></div>
+                  <div class="category-prev__body">
+                    <div class="category-prev__title"><span class="category-prev__title-text">Утеплители</span><span class="category-prev__count"> </span></div>
+                    <ul class="category-prev__list">
+                      <li class="category-prev__item"><a class="category-prev__link"> </a><span class="category-prev__count"> </span></li>
+                      <li class="category-prev__item"><a class="category-prev__link"> </a><span class="category-prev__count"> </span></li>
+                      <li class="category-prev__item"><a class="category-prev__link"> </a><span class="category-prev__count"> </span></li>
+                      <li class="category-prev__item"><a class="category-prev__link"> </a><span class="category-prev__count"> </span></li>
+                      <li class="category-prev__item"> <a class="category-prev__link green-link"> </a><span class="category-prev__count"></span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-advantages s-bg-white">
+          <div class="container">
+            <div class="advantages">
+              <div class="advantage">
+                <div class="advantage__aside"><i class="fas fa-award"></i></div>
+                <div class="advantage__body"><span class="advantage__title">30 дневная гарантия возврат денег</span>
+                  <p class="advantage__text">Поэтому вы можете делать покупки с уверенностью</p><a class="advantage__link link-underline" href="">Узнать о гарантиии</a>
+                </div>
+              </div>
+              <div class="advantage">
+                <div class="advantage__aside"><i class="fas fa-phone-square"></i></div>
+                <div class="advantage__body"><span class="advantage__title"> Специалисты по товарам на связи</span>
+                  <p class="advantage__text"> Мы ответим на любые вопросы о товарах в уверенностью</p><a class="advantage__link link-underline" href="">Получить консультацию</a>
+                </div>
+              </div>
+              <div class="advantage">
+                <div class="advantage__aside"><i class="far fa-hand-lizard"></i></div>
+                <div class="advantage__body"><span class="advantage__title"> Бесплатные образцы</span>
+                  <p class="advantage__text"> Некоторые товары вы можете изучить внимательно перед покупкой</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-promo">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="title-section">Акции и спецпредложения</h2>
+              <div class="section-header__right"><a class="section-header__link link-underline link-green" href="#">Все спецпредложения</a><span class="section-header__count">123</span></div>
+            </div>
+            <div class="promo">
+              <div class="promo-prev">
+                <div class="promo-prev__item">
+                  <div class="promo-prev__header" style="background-image: url(../img/building_material5.jpg)"><a class="btn" href="">Купить листы оцинкованные</a></div>
+                  <div class="promo-prev__body">
+                    <div class="promo-prev__text"><span class="promo-prev__descr">Специальное предложения</span><span class="promo-prev__title">на листы оцинкованные</span></div>
+                  </div>
+                </div>
+                <div class="promo-prev__item">
+                  <div class="promo-prev__header" style="background-image: url(../img/building_material3.jpg)"><a class="btn" href="">Купить доборные элементы</a></div>
+                  <div class="promo-prev__body">
+                    <div class="promo-prev__text"><span class="promo-prev__descr">Распродажа</span><span class="promo-prev__title">доборных элементов  кровли</span></div>
+                  </div>
+                </div>
+                <div class="promo-prev__item">
+                  <div class="promo-prev__header" style="background-image: url(../img/building_material4.jpg)"><a class="btn" href="">Купить профнастил со скидкой</a></div>
+                  <div class="promo-prev__body">
+                    <div class="promo-prev__text"><span class="promo-prev__descr">Скидки до 50%</span><span class="promo-prev__title">на профнастил</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-product-prev-line s-bg-white">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="title-section">Товары со скидкой</h2>
+              <div class="section-header__right"><a class="section-header__link link-underline link-green" href="#">Все товары со скидкой</a><span class="section-header__count">123</span></div>
+            </div>
+            <div class="product-prev-line">
+              <div class="product-prevs">
+                <div class="product-prev"><a class="product-prev__header" href="#">
+                    <div class="product-prev__img" style="background-image: url(../img/discount1.jpg)">
+                      <div class="product-prev__marks">
+                        <div class="product-prev__mark product-prev__mark_bg-yellow"> -30%</div>
+                        <!--.product-prev__mark.product-prev__mark_bg-green Хит-->
+                      </div>
+                    </div></a><a class="product-prev__body" href="#">
+                    <div class="product-prev__title"><span class="product-prev__name">Планка стыковочная 30x30x2000 мм, толщина 0.4 мм, цвет графитовый серый RAL 7024</span><span class="count-text">10шт</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Артикул</span><span class="product-prev__info-value">13763515</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Срок изготовления</span><span class="product-prev__info-value">от до 5 дней</span></div>
+                    <div class="product-prev__price"><span class="product-prev__price-old">300грн</span><span class="product-prev__price-current">250грн. за шт.</span></div></a>
+                  <div class="product-prev__footer">
+                    <button class="btn btn__fill"><i class="fas fa-shopping-basket"></i><span>В корзину</span></button>
+                  </div>
+                </div>
+                <div class="product-prev"><a class="product-prev__header" href="#">
+                    <div class="product-prev__img" style="background-image: url(../img/discount2.jpg)">
+                      <div class="product-prev__marks">
+                        <div class="product-prev__mark product-prev__mark_bg-yellow"> -30%</div>
+                        <!--.product-prev__mark.product-prev__mark_bg-green Хит-->
+                      </div>
+                    </div></a><a class="product-prev__body" href="#">
+                    <div class="product-prev__title"><span class="product-prev__name">Планка стыковочная 30x30x2000 мм, толщина 0.4 мм, цвет графитовый серый RAL 7024</span><span class="count-text">10шт</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Артикул</span><span class="product-prev__info-value">13763515</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Срок изготовления</span><span class="product-prev__info-value">от до 5 дней</span></div>
+                    <div class="product-prev__price"><span class="product-prev__price-old">300грн</span><span class="product-prev__price-current">250грн. за шт.</span></div></a>
+                  <div class="product-prev__footer">
+                    <button class="btn btn__fill"><i class="fas fa-shopping-basket"></i><span>В корзину</span></button>
+                  </div>
+                </div>
+                <div class="product-prev"><a class="product-prev__header" href="#">
+                    <div class="product-prev__img" style="background-image: url(../img/discount3.jpg)">
+                      <div class="product-prev__marks">
+                        <div class="product-prev__mark product-prev__mark_bg-yellow"> -30%</div>
+                        <div class="product-prev__mark product-prev__mark_bg-green">Хит</div>
+                      </div>
+                    </div></a><a class="product-prev__body" href="#">
+                    <div class="product-prev__title"><span class="product-prev__name">Планка стыковочная 30x30x2000 мм, толщина 0.4 мм, цвет графитовый серый RAL 7024</span><span class="count-text">10шт</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Артикул</span><span class="product-prev__info-value">13763515</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Срок изготовления</span><span class="product-prev__info-value">от до 5 дней</span></div>
+                    <div class="product-prev__price"><span class="product-prev__price-old">300грн</span><span class="product-prev__price-current">250грн. за шт.</span></div></a>
+                  <div class="product-prev__footer">
+                    <button class="btn btn__fill"><i class="fas fa-shopping-basket"></i><span>В корзину</span></button>
+                  </div>
+                </div>
+                <div class="product-prev"><a class="product-prev__header" href="#">
+                    <div class="product-prev__img" style="background-image: url(../img/discount4.jpg)">
+                      <div class="product-prev__marks">
+                        <div class="product-prev__mark product-prev__mark_bg-yellow"> -30%</div>
+                        <!--.product-prev__mark.product-prev__mark_bg-green Хит-->
+                      </div>
+                    </div></a><a class="product-prev__body" href="#">
+                    <div class="product-prev__title"><span class="product-prev__name">Планка стыковочная 30x30x2000 мм, толщина 0.4 мм, цвет графитовый серый RAL 7024</span><span class="count-text">10шт</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Артикул</span><span class="product-prev__info-value">13763515</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Срок изготовления</span><span class="product-prev__info-value">от до 5 дней</span></div>
+                    <div class="product-prev__price"><span class="product-prev__price-old">300грн</span><span class="product-prev__price-current">250грн. за шт.</span></div></a>
+                  <div class="product-prev__footer">
+                    <button class="btn btn__fill"><i class="fas fa-shopping-basket"></i><span>В корзину</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-sales-leaders">
+          <div class="container">
+            <div class="section-header"> 
+              <h2 class="title-section">Лидеры продаж</h2>
+            </div>
+            <div class="sales-leaders">
+              <div class="sales-leaders__row">
+                <div class="sales-leaders__col"><a class="sales-leaders__item sales-leaders__item_big" href="#">
+                    <div class="sales-leaders__img" style="background-image: url(../img/sales1.jpg)"></div><span class="sales-leaders__names">Водосточные трубы</span></a>
+                  <div class="sales-leaders__row">
+                    <div class="sales-leaders__col"><a class="sales-leaders__item" href="#">
+                        <div class="sales-leaders__img" style="background-image: url(../img/sales6.jpg)"></div><span class="sales-leaders__names">Планка стыковочная 30x30x2000 мм</span></a></div>
+                    <div class="sales-leaders__col"><a class="sales-leaders__item" href="#">
+                        <div class="sales-leaders__img" style="background-image: url(../img/sales2.jpg)"></div><span class="sales-leaders__names">Гладкий лист оцинкованный</span></a></div>
+                  </div>
+                </div>
+                <div class="sales-leaders__col">
+                  <div class="sales-leaders__row">
+                    <div class="sales-leaders__col"><a class="sales-leaders__item" href="#">
+                        <div class="sales-leaders__img" style="background-image: url(../img/sales5.jpg)"></div><span class="sales-leaders__names">Гладкий лист оцинкованный</span></a></div>
+                    <div class="sales-leaders__col"><a class="sales-leaders__item" href="#">
+                        <div class="sales-leaders__img" style="background-image: url(../img/sales4.jpg)"></div><span class="sales-leaders__names">Подсистема вентилируемого фасада</span></a></div>
+                  </div>
+                  <div class="sales-leaders__row"><a class="sales-leaders__item sales-leaders__item_big" href="#">
+                      <div class="sales-leaders__img" style="background-image: url(../img/sales3.jpg)"></div><span class="sales-leaders__names">Планка стыковочная 30X20X2000 мм, толщина 0,4мм, цвет графитовый серый</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-product-slider s-bg-white">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="title-section">Вы смотрели</h2>
+              <div class="section-header__right"><span class="product-slider__count"></span></div>
+            </div>
+            <div class="product-prev-slider">
+              <div class="slider-nav slider-nav_prev"><i class="fas fa-angle-left"></i></div>
+              <div class="slider-nav slider-nav_next"><i class="fas fa-angle-right"></i></div>
+              <div class="product-slider__js">
+                <div class="product-prev"><a class="product-prev__header" href="#">
+                    <div class="product-prev__img" style="background-image: url(../img/discount1.jpg)">
+                      <div class="product-prev__marks">
+                        <div class="product-prev__mark product-prev__mark_bg-yellow"> -30%</div>
+                        <!--.product-prev__mark.product-prev__mark_bg-green Хит-->
+                      </div>
+                    </div></a><a class="product-prev__body" href="#">
+                    <div class="product-prev__title"><span class="product-prev__name">Планка стыковочная 30x30x2000 мм, толщина 0.4 мм, цвет графитовый серый RAL 7024</span><span class="count-text">10шт</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Артикул</span><span class="product-prev__info-value">13763515</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Срок изготовления</span><span class="product-prev__info-value">от до 5 дней</span></div>
+                    <div class="product-prev__price"><span class="product-prev__price-old">300грн</span><span class="product-prev__price-current">250грн. за шт.</span></div></a>
+                  <div class="product-prev__footer">
+                    <button class="btn btn__fill"><i class="fas fa-shopping-basket"></i><span>В корзину</span></button>
+                  </div>
+                </div>
+                <div class="product-prev"><a class="product-prev__header" href="#">
+                    <div class="product-prev__img" style="background-image: url(../img/discount2.jpg)">
+                      <div class="product-prev__marks">
+                        <div class="product-prev__mark product-prev__mark_bg-yellow"> -30%</div>
+                        <!--.product-prev__mark.product-prev__mark_bg-green Хит-->
+                      </div>
+                    </div></a><a class="product-prev__body" href="#">
+                    <div class="product-prev__title"><span class="product-prev__name">Планка стыковочная 30x30x2000 мм, толщина 0.4 мм, цвет графитовый серый RAL 7024</span><span class="count-text">10шт</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Артикул</span><span class="product-prev__info-value">13763515</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Срок изготовления</span><span class="product-prev__info-value">от до 5 дней</span></div>
+                    <div class="product-prev__price"><span class="product-prev__price-old">300грн</span><span class="product-prev__price-current">250грн. за шт.</span></div></a>
+                  <div class="product-prev__footer">
+                    <button class="btn btn__fill"><i class="fas fa-shopping-basket"></i><span>В корзину</span></button>
+                  </div>
+                </div>
+                <div class="product-prev"><a class="product-prev__header" href="#">
+                    <div class="product-prev__img" style="background-image: url(../img/discount3.jpg)">
+                      <div class="product-prev__marks">
+                        <div class="product-prev__mark product-prev__mark_bg-yellow"> -30%</div>
+                        <div class="product-prev__mark product-prev__mark_bg-green">Хит</div>
+                      </div>
+                    </div></a><a class="product-prev__body" href="#">
+                    <div class="product-prev__title"><span class="product-prev__name">Планка стыковочная 30x30x2000 мм, толщина 0.4 мм, цвет графитовый серый RAL 7024</span><span class="count-text">10шт</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Артикул</span><span class="product-prev__info-value">13763515</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Срок изготовления</span><span class="product-prev__info-value">от до 5 дней</span></div>
+                    <div class="product-prev__price"><span class="product-prev__price-old">300грн</span><span class="product-prev__price-current">250грн. за шт.</span></div></a>
+                  <div class="product-prev__footer">
+                    <button class="btn btn__fill"><i class="fas fa-shopping-basket"></i><span>В корзину</span></button>
+                  </div>
+                </div>
+                <div class="product-prev"><a class="product-prev__header" href="#">
+                    <div class="product-prev__img" style="background-image: url(../img/discount4.jpg)">
+                      <div class="product-prev__marks">
+                        <div class="product-prev__mark product-prev__mark_bg-yellow"> -30%</div>
+                        <!--.product-prev__mark.product-prev__mark_bg-green Хит-->
+                      </div>
+                    </div></a><a class="product-prev__body" href="#">
+                    <div class="product-prev__title"><span class="product-prev__name">Планка стыковочная 30x30x2000 мм, толщина 0.4 мм, цвет графитовый серый RAL 7024</span><span class="count-text">10шт</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Артикул</span><span class="product-prev__info-value">13763515</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Срок изготовления</span><span class="product-prev__info-value">от до 5 дней</span></div>
+                    <div class="product-prev__price"><span class="product-prev__price-old">300грн</span><span class="product-prev__price-current">250грн. за шт.</span></div></a>
+                  <div class="product-prev__footer">
+                    <button class="btn btn__fill"><i class="fas fa-shopping-basket"></i><span>В корзину</span></button>
+                  </div>
+                </div>
+                <div class="product-prev"><a class="product-prev__header" href="#">
+                    <div class="product-prev__img" style="background-image: url(../img/discount1.jpg)">
+                      <div class="product-prev__marks">
+                        <div class="product-prev__mark product-prev__mark_bg-yellow"> -30%</div>
+                        <!--.product-prev__mark.product-prev__mark_bg-green Хит-->
+                      </div>
+                    </div></a><a class="product-prev__body" href="#">
+                    <div class="product-prev__title"><span class="product-prev__name">Планка стыковочная 30x30x2000 мм, толщина 0.4 мм, цвет графитовый серый RAL 7024</span><span class="count-text">10шт</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Артикул</span><span class="product-prev__info-value">13763515</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Срок изготовления</span><span class="product-prev__info-value">от до 5 дней</span></div>
+                    <div class="product-prev__price"><span class="product-prev__price-old">300грн</span><span class="product-prev__price-current">250грн. за шт.</span></div></a>
+                  <div class="product-prev__footer">
+                    <button class="btn btn__fill"><i class="fas fa-shopping-basket"></i><span>В корзину</span></button>
+                  </div>
+                </div>
+                <div class="product-prev"><a class="product-prev__header" href="#">
+                    <div class="product-prev__img" style="background-image: url(../img/discount2.jpg)">
+                      <div class="product-prev__marks">
+                        <div class="product-prev__mark product-prev__mark_bg-yellow"> -30%</div>
+                        <!--.product-prev__mark.product-prev__mark_bg-green Хит-->
+                      </div>
+                    </div></a><a class="product-prev__body" href="#">
+                    <div class="product-prev__title"><span class="product-prev__name">Планка стыковочная 30x30x2000 мм, толщина 0.4 мм, цвет графитовый серый RAL 7024</span><span class="count-text">10шт</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Артикул</span><span class="product-prev__info-value">13763515</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Срок изготовления</span><span class="product-prev__info-value">от до 5 дней</span></div>
+                    <div class="product-prev__price"><span class="product-prev__price-old">300грн</span><span class="product-prev__price-current">250грн. за шт.</span></div></a>
+                  <div class="product-prev__footer">
+                    <button class="btn btn__fill"><i class="fas fa-shopping-basket"></i><span>В корзину</span></button>
+                  </div>
+                </div>
+                <div class="product-prev"><a class="product-prev__header" href="#">
+                    <div class="product-prev__img" style="background-image: url(../img/discount3.jpg)">
+                      <div class="product-prev__marks">
+                        <div class="product-prev__mark product-prev__mark_bg-yellow"> -30%</div>
+                        <div class="product-prev__mark product-prev__mark_bg-green">Хит</div>
+                      </div>
+                    </div></a><a class="product-prev__body" href="#">
+                    <div class="product-prev__title"><span class="product-prev__name">Планка стыковочная 30x30x2000 мм, толщина 0.4 мм, цвет графитовый серый RAL 7024</span><span class="count-text">10шт</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Артикул</span><span class="product-prev__info-value">13763515</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Срок изготовления</span><span class="product-prev__info-value">от до 5 дней</span></div>
+                    <div class="product-prev__price"><span class="product-prev__price-old">300грн</span><span class="product-prev__price-current">250грн. за шт.</span></div></a>
+                  <div class="product-prev__footer">
+                    <button class="btn btn__fill"><i class="fas fa-shopping-basket"></i><span>В корзину</span></button>
+                  </div>
+                </div>
+                <div class="product-prev"><a class="product-prev__header" href="#">
+                    <div class="product-prev__img" style="background-image: url(../img/discount4.jpg)">
+                      <div class="product-prev__marks">
+                        <div class="product-prev__mark product-prev__mark_bg-yellow"> -30%</div>
+                        <!--.product-prev__mark.product-prev__mark_bg-green Хит-->
+                      </div>
+                    </div></a><a class="product-prev__body" href="#">
+                    <div class="product-prev__title"><span class="product-prev__name">Планка стыковочная 30x30x2000 мм, толщина 0.4 мм, цвет графитовый серый RAL 7024</span><span class="count-text">10шт</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Артикул</span><span class="product-prev__info-value">13763515</span></div>
+                    <div class="product-prev__info"><span class="product-prev__info-label">Срок изготовления</span><span class="product-prev__info-value">от до 5 дней</span></div>
+                    <div class="product-prev__price"><span class="product-prev__price-old">300грн</span><span class="product-prev__price-current">250грн. за шт.</span></div></a>
+                  <div class="product-prev__footer">
+                    <button class="btn btn__fill"><i class="fas fa-shopping-basket"></i><span>В корзину</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-question s-size-small">
+          <div class="container">
+            <div class="questions">
+              <div class="upgrade">
+                <div class="upgrade__icon-wrapper"><i class="fas fa-question-circle"></i></div><a class="link link-underline">Что можно улучшить на этой странице?</a>
+              </div>
+              <div class="ask-your-question"><span class="ask-your-question__text">Задайте вопрос</span>
+                <ul class="ask-your-question__list">
+                  <li class="ask-your-question__item"><a class="ask-your-question__link" href=""><i class="fab fa-facebook-messenger"></i><span class="ask-your-question__text">Messenger	</span></a></li>
+                  <li class="ask-your-question__item"><a class="ask-your-question__link" href=""><i class="fab fa-telegram"></i><span class="ask-your-question__text">Telegram	</span></a></li>
+                  <li class="ask-your-question__item"><a class="ask-your-question__link" href=""><i class="fab fa-vk"></i><span class="ask-your-question__text">Вконтакте	</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer-main">
+          <div class="container">
+            <div class="footer-callback"><i class="fab fa-wikipedia-w"></i>
+              <div class="order-callback footer-callback__order-callback order-callback"><span class="order-callback__description">Звоните круглосуточно</span><a class="order-callback__phone" href="tel:+74993348888">+7 499 334-88-88</a><a class="order-callback__link link-white link-underline" href="">Заказать звонок</a></div>
+            </div>
+            <div class="footer-middle">
+              <div class="footer__col"><span class="footer__title">О нас</span>
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="">Оплата и доставка</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="">Гарантия</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="">Услуги по обработке металла</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="">Компания</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="">Контакты</a><span class="footer-nav__desc">Связь с директором</span></li>
+                </ul>
+              </div>
+              <div class="footer__col"><span class="footer__title">Каталог</span>
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="">Все для кровли</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="">Фасад</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="">Профнастил</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="">Листовой прокат</a></li>
+                  <li class="footer-nav__item"><a class="footer-nav__link" href="">Рулонная сталь</a></li>
+                </ul>
+              </div>
+              <div class="footer__col">
+                <div class="footer__block"><span class="footer__title">Принимаем к оплате</span>
+                  <div class="payment-types">
+                    <ul class="payment-types__list">
+                      <li class="payment-types__item">
+                        <div class="payment-types__logo"><i class="fab fa-cc-visa"></i></div>
+                      </li>
+                      <li class="payment-types__item">
+                        <div class="payment-types__logo"><i class="fab fa-cc-mastercard"></i></div>
+                      </li>
+                      <li class="payment-types__item">
+                        <div class="payment-types__logo"><i class="fas fa-ad"></i></div>
+                      </li>
+                    </ul><a class="link-underline link-yellow" href="">Оплата заказа онлайн		</a>
+                  </div>
+                </div>
+                <div class="footer__block"><span class="footer__title">Акции и спецпредложения</span></div>
+              </div>
+              <div class="footer__col">
+                <div class="footer__block"><span class="footer__title">Контакты</span>
+                  <div class="footer-contacts"><i class="fas fa-map-marker-alt"></i><span class="footer-contacts__title">Офис</span>
+                    <p class="footer-contacts__text">111033, Харьков, улица Киевская 18б кв 3<a class="footer-contacts__link link-white link-underline" href="">на карте</a></p>
+                  </div>
+                </div>
+                <div class="footer__block">
+                  <div class="footer-contacts"><i class="fas fa-map-marker-alt"></i><span class="footer-contacts__title">Производство и склад</span>
+                    <p class="footer-contacts__text">Харьковская обл., Основянский р-н, г. Видное, улица Киевская 18б кв 3 ФРП "Комплекс"<a class="footer-contacts__link link-white link-underline" href="">на карте</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom__line"><span class="copyright">2018 Завод "Веневский"</span><a class="footer-bottom__link" href="">Политика конфиденциальности</a><a class="footer-bottom__link" href="">Карта сайта</a></div>
+            <div class="footer-bottom__line">
+              <p class="footer-bottom__text">Сайт venev.ru носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями ГК РФ. </p>
+              <p class="footer-bottom__text">Для получения подробной информации о наличии, видах, характеристиках и стоимости материалов, пожалуйста, обращайтесь в офисы продаж.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

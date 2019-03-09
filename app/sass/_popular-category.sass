@@ -1,0 +1,48 @@
+
+.category-prev
+	&-js
+		display: flex 
+		flex-wrap: wrap
+		& > * 
+			flex: 0 0 calc(25% - 20px)
+			max-width: 255px
+			width: calc(25%-20px)
+			margin-right: 20px
+			margin-bottom: 30px
+			&:nth-child(4n+4)
+				margin-right: 0
+				margin-top: 0
+	&__slide
+		background-color: $white
+		border-radius: 4px
+		overflow: hidden
+	&__img
+		background-repeat: no-repeat
+		-webkit-background-size: cover 
+		-moz-background-size: cover 
+		background-size: cover 
+		background-position: center
+		height: 180px
+	&__body
+		padding: 15px
+	&__title
+		font-size: 22px
+		margin-bottom: 20px
+		color: $base-text-color
+	&__count
+		color: $textInfoColor
+		font-size: 14px
+		margin-left: 5px
+	&__item
+		margin-bottom: 10px
+		color: $base-text-color
+		&:last-child
+			margin-bottom: 0
+			margin-top: 20px
+			color: $link-color
+	&__link
+		font-size: 14px
+		
+			
+
+

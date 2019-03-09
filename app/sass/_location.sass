@@ -1,0 +1,25 @@
+.location
+	flex: 0 0 175px
+	max-width: 175
+	width: 100%
+	&__header
+		display: flex
+		align-items: center
+		cursor: pointer
+		.fa-map-marker-alt
+			font-size: 16px
+			color: $base-text-color
+		& > *//все дочерние элементы
+			&:not(:last-child)//кроме последнего
+				margin-right: 10px
+	&__current
+		display: flex
+		align-items: center
+		&:after
+			content: ''
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 4px 4.5px 0 4.5px
+			border-color: #000000 transparent transparent transparent
+			margin-left: 10px

@@ -1,0 +1,41 @@
+.sales-leaders 
+	&__row 
+		display: flex 
+		& > *
+			&:not(:last-child)
+				margin-right: 20px
+	&__col
+		flex: 1
+	&__item
+		background-color: $white
+		border-radius: 4px
+		border: 2px solid transparent 
+		transition: all linear .3s
+		padding: 20px
+		margin-bottom: 20px
+		width: 100%
+		display: block
+		height: 240px
+		&_big
+			height: 400px
+			.sales-leaders
+				&__img
+					max-height: 280px
+					height: 100%
+				&__names
+					font-size: 22px
+					line-height: 1.25
+		&:hover
+			border-color: $accent
+	&__img 
+		background-repeat: no-repeat
+		-webkit-background-size: cover
+		-moz-background-size: cover
+		background-size: cover
+		background-position: center
+		max-width: 100%
+		max-height: 140px
+		height: 100%
+		margin-bottom: 10px
+	
+

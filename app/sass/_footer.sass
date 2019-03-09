@@ -1,0 +1,102 @@
+footer 
+	flex: 0 0 auto
+.footer 
+	&-callback
+		display: flex 
+		align-items: center
+		margin-bottom: 40px
+		& > *
+			&:not(:last-child)
+				margin-right: 30px	
+		i 
+			font-size: 60px
+	&-main
+		background-color: $dark-bg-color
+		padding: 30px 0
+		color: $white
+	&-middle
+		display: flex	
+	&-bottom
+		font-size: 12px
+		color: rgba($white, .6)
+		padding: 10px 0
+		background-color: $darkest-bg-color
+		& > *
+			margin: 10px 0
+			&:first-child
+				margin-top: 0
+			&:last-child
+				margin-bottom: 0	
+		&__line
+			& > *
+				&:not(:last-child)
+					margin-right: 30px		
+		&__link
+			text-decoration: underline
+			color: $white
+	&__title
+		display: block
+		margin-bottom: 10px	
+	&-contacts
+		position: relative
+		padding-left: 25px
+		i 
+			font-size: 16px	
+			color: $white
+			position: absolute
+			left: 0px
+			top: 0
+		&__link
+			margin-left: 5px
+		&__title
+			display: block
+			font-size: 14px
+			margin-bottom: 10px
+		&__text
+			font-size: 12px
+		&__block
+			margin-bottom: 40px
+			&:last-child
+				margin-bottom: 0
+	&__col
+		width: 25%
+		& > *
+			margin: 10px 0 
+			&:first-child
+				margin-top: 0
+			&:last-child
+				margin-bottom: 0	
+	&-nav 
+		&__link
+			color: $white
+			margin-right: 10px
+		&-list 
+			& > *
+				margin: 10px 0 
+				&:first-child
+					margin-top: 0
+				&:last-child
+					margin-bottom: 0	
+	  &__item 
+	  	font-size: 14px
+	  	& > *
+				&:not(:last-child)
+					margin-right: 10px
+	  &__descr
+	  	color: rgba($white, .6)
+	  	font-size: 12px
+
+.payment-types
+	& > *
+		margin: 15px 0 
+		&:first-child
+			margin-top: 0
+		&:last-child
+			margin-bottom: 0
+	&__list 
+	 display: flex 
+	 & > *
+				&:not(:last-child)
+					margin-right: 10px
+	i 
+		font-size: 40px

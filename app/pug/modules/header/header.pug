@@ -1,0 +1,26 @@
+header.header
+	.header-top
+		.container
+			.header-top__location.location
+				.location__header
+					i.fas.fa-map-marker-alt
+					span.location__current Нижний Новгород
+				.location__body
+			include ../navigation/main-nav
+			.header-top__user-nav.user-nav
+				a(href="#").user-nav__link.link-green Войти
+	.header-main
+		.container
+			.header-main__logo.logo
+				.logo__img
+					img(src="img/logotip.png" alt="логотип")
+			include ../navigation/catalog-nav
+			
+			.header-main__search.search
+				input(placeholder="Артикул или название товара").input-field.input-field_size-small
+				i.fas.fa-search
+			.header-main__order-callback.order-callback
+				span.order-callback__description Звоните круглосуточно
+				a(href="tel:+74993348888").order-callback__phone +7 499 334-88-88
+				a(href="#").order-callback__link.link-white.link-underline Заказать звонок
+			include ../basket/basket-prev

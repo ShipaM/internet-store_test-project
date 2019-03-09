@@ -1,0 +1,21 @@
+.btn
+	background-color: $accent
+	cursor: pointer 
+	border: 0
+	padding: 10px 20px
+	border-radius: 4px
+	line-height: 20px
+	display: flex
+	align-items: center
+	&:hover
+		background-color: #f0de01
+	& > *
+		&:not(:last-child)
+			margin-right: 10px
+	.fa-shopping-basket
+		font-size: 25px
+	&__fill
+		width: 100%
+		justify-content: center
+	&__disabled
+		opacity: .5

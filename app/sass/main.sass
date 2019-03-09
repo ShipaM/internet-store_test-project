@@ -1,0 +1,93 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "sandwich.sass"
+@import "location.sass"
+@import "header.sass"
+@import "main-nav.sass"
+@import "catalog-nav.sass"
+@import "input-field.sass"
+@import "_small-blocks.sass"
+@import "_basket.sass"
+@import "_banner.sass"
+@import "_popular-category.sass"
+@import "_advantages.sass"
+@import "_promo.sass"
+@import "_buttons.sass"
+@import "_discount.sass"
+@import "_prev.sass"
+@import "_sales-leaders.sass"
+@import "_prev-slider.sass"
+@import "_questions.sass"
+@import "_links.sass"
+@import "_footer.sass"
+
+* 
+	box-sizing: border-box
+
+::placeholder
+	color: $textInfoColor
+	font-size: 12px
+
+::selection
+	background-color: $accent
+	color: $white
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $base-text-color
+	background-color: $main-bg-color
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+	a 
+		color: $black
+		&:hover
+			text-decoration: none
+	li 
+		list-style: none
+	ul
+		margin: 0
+		padding: 0
+	section 
+		padding: 40px 0
+		position: relative	
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.container
+	margin: 0 auto
+	max-width: 1240px
+	width: 100%
+	padding: 0 80px
+
+
+
+		
+		
+	
+
+
+
+
+
+
+		
+@import "media" // Always at the end

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<title>gulp template!!!!</title>
+</head>
+<body>
+	<main class="main">
+		<section class="gulp">
+			<div class="gulp__customize">
+				<h2>Gulp. Руководство пользования.</h2>
+				<img src="img/gulp.png" alt="gulp">
+				<p>
+					<strong>Gulp</strong> — это инструмент сборки веб-приложения, позволяющий автоматизировать повторяющиеся задачи, такие как сборка и минификация CSS- и JS-файлов, запуск тестов, перезагрузка браузера, конкатенацию файлов, препроцессинг CSS, оптимизация изображений и т.д. Тем самым Gulp ускоряет и оптимизирует процесс веб-разработки.
+				</p>
+				<p>
+					<strong>Gulp</strong> построен на Node.js, и файл сборки пишется на JavaScript. Сам по себе Gulp умеет нео чень много, но имеет огромное количество плагинов, которые можно найти на странице со списком плагинов или просто поиском на npm.
+				</p>
+				<p>
+					<strong>Npm(Node.js Package Manager)</strong> — это стандартный менеджер пакетов, автоматически устанавливающийся вместе с Node.js. Он используется для скачивания пакетов из облачного сервера npm, либо для загрузки пакетов на эти сервера.
+				</p>
+			</div>
+			<div class="gulp__get-started">
+				<h2>Собираем свою сборку Gulp</h2>
+				<p>
+					Для начала заходим на сайт <a href="https://nodejs.org/uk/" target="_blank">Nodejs.org</a> и скачиваем последнюю версию Nodejs, после чего устанавливаем ее.
+				</p>
+				<p>
+					Также для работы нам понадобится терминал Git Bash Here, переходим на сайт <a href="https://git-scm.com/">git-scm.com</a>, скачиваем актуальную версию и устанавливаем ее.
+				</p>
+				<p>
+					После установки <strong>Node.js</strong>, устанавливаем <strong>gulp глобально</strong>. Открываем  командную строку в <strong>папке нашего проекта(start_template)</strong>, <strong>зажимаем shift и кликаем правой кнопкой мыши</strong>, после выбираем <strong>открыть окно команд</strong>, и вводим команду: <br> 
+				</p>
+				<img src="img/gulp_g.png" alt="установка gulp глобально">
+				<p> 
+					Флаг -global указывает, что Gulp необходимо установить на компьютер, глобально для использования в любом месте системы. 
+					После установки появляется сообщение:<br>
+				</p>
+				<img src="img/gulp4.png" alt="установка gulp глобально">
+				
+			</div>
+			<div class="gulp__create-project">
+				<h2>Создание проекта</h2>
+				<p>
+					Создаем проект или переходим в корневую папку существующего проекта.
+				</p>
+				<h3>Инициализируем наш проект.</h3>
+				<p>Для этого в командной строке вводим:</p><br>
+				<img src="img/npm_init.png" alt="инициализация нашего проэкта">
+				<p>
+					Команда <strong>npm init</strong> создает файл <strong>package.json</strong>, который содержит информацию о проекте (описание проекта и зависимости).
+
+				</p>
+				<img src="img/create_packageJson.png" alt="create_packageJson">
+				<p>
+					Когда файл <strong>package.json</strong> создан, мы можем установить Gulp с помощью команды:
+				</p>
+				<img src="img/gulpSD.png" alt="gulpSD">
+				<p>
+					Ключ <strong>--save-dev</strong> вносит в уже существующий файл <strong>package.json</strong> запись о Gulp в секцию <strong>devDependencies</strong>.После выполнения команды вы увидите, что в корневом каталоге появилась папка <strong>node_module</strong>s, внутри которой лежит папка Gulp. Для удаления папки <strong>node_modules</strong> вводим команду:
+				</p>
+				<img src="img/deleteNM.png" alt="deleteNM">
+				<h3>Определяем структуру папок.</h3>
+				<p>
+					Gulp может работать с любой структурой папок. Для нашего проекта мы будем использовать следующую структуру:
+				</p>
+				<img src="img/catalog.png" alt="структура папок">
+				<p>
+					Папку <strong>app</strong> мы будем использовать в целях разработки, а в папке <strong>dist(distribution)</strong> будем хранить оптимизированные файлы. Так как папка <strong>app</strong> у нас используется для разработки, то и код будет храниться в ней.
+				</p>
+				<h2>Создаем структуру нашего проекта</h2>
+				<p>
+					Создавать структуру проекта можно используя терминал <strong>Git Bash Here</strong>. 
+				</p>
+				<p>
+					Создаем папочку app которая будет содержать все файлы и папки нашего проекта. Для этого, в папке нашего проекта открываем консоль <strong>Git Bash Here</strong> и вводим: mkdir app
+				</p>
+				<img src="img/Screenshot_1.png" alt="структура проекта">
+				<p>
+					В папке нашего проекта появляется  появляется папочка <strong>app</strong>. Далее создаем  файл <strong>gulpfile.js</strong> который будет содержать и в котором мы подключаем нужные нам пакеты. Также создаем файл <strong>.gitignore</strong> который будет игнорировать файлы и папки которые нам не нужно заносить на удаленный репозиторий.
+					Для этого в консоли <strong>Git Bash Here</strong> вводим: touch gulpfile.js .gitignore
+				</p>
+				<img src="img/gulpfile.png" alt="gulpfile">
+				<p>После чего в папке проекта появилось еще 2 файла</p>
+				<p>
+					Вот теперь наша структура папок и файлов имеет такой вид:
+				</p>
+				<img src="img/folder_project.png" alt="структура проекта">
+				<p>
+					Теперь вносим в файл <strong>.gitignore </strong> папку <strong>node_modules</strong> для этого в консоль <strong>Git Bash Here</strong> вводим: echo node_modules>.gitignore
+				</p>
+				<img src="img/gitgnore.png" alt="node_moduleі">
+				<p>
+					Проверяем файл <strong>.gitignore</strong> и видим:<br>
+				</p>
+				<img src="img/gitfile.png" alt="gitignore"><br>
+				<p>
+					появилась наша папка <strong>node_modules</strong>
+				</p>
+				<p>
+					Переходим в папку app, для этого в командной строке вводим: cd app/ нажимаем enter и мы уже в папке app<br>
+					
+				</p>
+				<img src="img/app.png" alt="формируем структуру папки app ">
+				<p>
+					Создаем в папке app папки:<br> <strong>fonts</strong> - для хранения необходимых шрифтов;<br> <strong>img</strong> - для хранения изображений; <br> <strong>js</strong> - для хранения js файлов; <br> <strong>libs</strong> - для хранения библиотек; <br> <strong>sass</strong> - для хранения sass файлов <br> <strong>pug</strong> - для хранения pug файлов
+				</p>
+				<p>
+					для этого вводим в командной строке: mkdir fonts img js libs sass pug  и жмем enter
+					
+				</p>
+				<img src="img/pug.png" alt="app_folder">
+				<p>
+					В результате получаем такую структуру папки app:
+				</p>
+				<img src="img/pug_complete.png" alt="структура папки app">
+				<p>
+					Теперь в папке js создадим файл common.js для этого в консоли  <strong>Git Bash Here</strong> вводим: touch js/common.js
+				</p>
+				<p>
+					Аналогично в папке sass создадим main.sass для этого в консоли <strong>Git Bash Here</strong> вводим:touch sass/main.sass 
+				</p>
+				<img src="img/common_js.png" alt="common_js main_sass">
+				<h2>Устанавливаем плагины</h2>
+				<p>
+					Первым установим плагин <strong>gulp-uglify</strong> для сжатия js файлов. Для этого вводим в командной строке windows: npm i gulp-uglify --save-dev
+				</p>
+				<img src="img/gulp-uglify.png" alt="gulp-uglify">
+				<p>
+					После установки подключаем gulp-uglify в файле <strong>gulpfile.js</strong>
+				</p>
+				<img src="img/gulpfile_uglify.png" alt="подключение gulp и gulp-uglify">
+				<p>
+					Следующим устанавливаем пакет gulp-concat для конкатенации файлов. Для этого вводим в командной строке windows: npm i gulp-concat --save-dev
+				</p>
+				<img src="img/gulp-concat.png" alt="gulp-concat">
+				<p>
+					После установки подключаем gulp-concat в файле <strong>gulpfile.js</strong>
+				</p>
+				<img src="img/gulpConcat.png" alt="подключение gulp-concat">
+				<h3>Создаем таски </h3>
+				<p>
+					Создаем таск js который, объединяет, 
+ 					минифицирует, улучшает и складывает все файлы и библиотеки js в
+ 					отдельный файлик main.js. Для этого в файле <strong>gulpfile.js</strong> создаем task js:
+				</p>
+				<img src="img/task_js.png" alt="task_js">
+				<p>
+					После создания таска js проверяем правильно ли работает наш таск вводим в командной строке windows: gulp js
+				</p>
+				<img src="img/gulp_js.png" alt="gulp js">
+				<p>
+					После выполнения таска, появляется папочка <strong>dist</strong>, внутри которой лежит папка <strong>js</strong>, внутри которой лежит сжатый файл <strong>main.js</strong>. Значит наш таск отработал правильно!!!
+				</p>
+				<img src="img/dist_js_main.png" alt="dist_js_main">
+				<p>
+					Устанавливаем пакет gulp-sass. Для этого вводим в командной строке windows: npm i gulp-sass --save-dev
+				</p>
+				<img src="img/gulp_sass.png" alt="установка пакета gulp-sass">
+				<p>
+					Подключаем пакет gulp-sass в <strong>gulpfile.js</strong>
+				</p>
+				<img src="img/gulp-sass_gulpfile.png" alt="подключение gulp-sass">
+				<p>
+					Создаем таск styles который, объединяет, минифицирует, улучшает и складывает все файлы и библиотеки sass в отдельный файлик main.css
+				</p>
+				<img src="img/task_sass.png" alt="создаем таск styles">
+				<p>
+						После создания таска styles проверяем правильно ли работает наш таск вводим в командной строке windows: gulp styles
+				</p>
+				<img src="img/gulp_styles.png" alt="проверяем gulp-sass">
+				<p>
+					После выполнения таска, появляется папочка <strong>dist</strong>, внутри которой лежит папка <strong>css</strong>, внутри которой лежит  файл <strong>main.css</strong>. Значит наш таск отработал правильно!!!
+				</p>
+				<img src="img/main.css.png" alt="проверяем появление main.css">
+
+				<p>
+					Устанавливаем пакет gulp-pug. Для этого вводим в командной строке windows: npm i gulp-pug --save-dev
+				</p>
+				<img src="img/gulp-pug.png" alt="установка пакета gulp-pug">
+				<p>
+					Подключаем пакет gulp-pug в <strong>gulpfile.js</strong>
+				</p>
+				<img src="img/gp.png" alt="Подключаем пакет gulp-pug">
+				<p>
+					Создаем таск html который, переносит наш файл в папку продакшена dist
+				</p>
+				<img src="img/task_html.png" alt="Создаем таск html">
+				<p>
+					После создания таска html проверяем правильно ли работает наш таск вводим в командной строке windows: gulp html
+				</p>
+				<img src="img/gulp_html.png" alt="gulp html">
+				<p>
+					После выполнения таска, появляется папочка <strong>dist</strong>, внутри которой лежит  файл <strong>index.html</strong>. Значит наш таск отработал правильно!!!
+				</p>
+				<img src="img/dist_index.html.png" alt="dist_index.html">
+				<p>
+					Создаем таск fonts который, переносит наши файлы со шрифтами в папку продакшена dist
+				</p>
+				<img src="img/fonts_task.png" alt="fonts_task">
+				<p>
+					После создания таска fonts проверяем правильно ли работает наш таск вводим в командной строке windows: gulp fonts
+				</p>
+				<img src="img/gulp_fonts.png" alt="gulp_fonts">
+				<p>
+					После выполнения таска, появляется папочка <strong>dist</strong>, внутри которой лежит папка <strong>fonts</strong>, внутри которой лежат шрифты. Значит наш таск отработал правильно!!!
+				</p>
+				<img src="img/fonts.png" alt="fonts">
+				<p>
+					Устанавливаем пакет gulp-imagemin для оптимизация изображений.Для этого вводим в командной строке windows: npm i gulp-imagemin --save-dev
+				</p>
+				<img src="img/gulp_imagemin.png" alt="gulp_imagemin">
+				<p>
+					Создаем таск images который, объединяет, минифицирует, улучшает и складывает картинки форматов 'svg' 'png' 'jpg' и 'gif'в папку images в папке dist
+				</p>
+				<img src="img/task_imagemin.png" alt="task_imagemin">
+				<p>
+					После создания таска images проверяем правильно ли работает наш таск вводим в командной строке windows: gulp images
+				</p>
+				<img src="img/gulp_images.png" alt="gulp_images">
+				<p>
+					После выполнения таска, внутри папочки <strong>dist</strong>,лежит папка <strong>img</strong>, внутри которой лежат оптимизированные изображения. Значит наш таск отработал правильно!!!
+				</p>
+				<img src="img/dist_img.png" alt="dist_img">
+				<p>
+					Устанавливаем пакет gulp-clean который, удаляет папку dist.Для этого вводим в командной строке windows: npm i gulp-clean --save-dev
+				</p>
+				<img src="img/gulp_clean.png" alt="gulp_clean">
+				<p>
+					Подключаем gulp-clean в gulpfile.js
+				</p>
+				<img src="img/gulp_clean_gulpfile.png" alt="gulp_clean_gulpfile">
+				<p>
+					Создаем таск clean который, удаляет папку dist
+				</p>
+				<img src="img/gulp_task_clean.png" alt="gulp_task_clean">
+				<p>
+					После создания таска clean проверяем правильно ли работает наш таск вводим в командной строке windows: gulp clean
+				</p>
+				<img src="img/gulp_clean_dist.png" alt="gulp_clean_dist">
+				<p>
+					После выполнения таска, удаляется папка dist. Но для дальнейшей корректной работы создаем вручную в папке нашего проекта папку dist.
+				</p>
+				<img src="img/delete_dist.png" alt="delete_dist">
+				<p>
+					Устанавливаем пакет gulp-shell который, запускает очередность. Для этого вводим в командной строке windows: npm i gulp-shell --save-dev
+				</p>
+				<img src="img/gulp_shell.png" alt="gulp_shell">
+				<p>
+					Подключаем gulp-shell в gulpfile.js
+				</p>
+				<img src="img/gulp_shell_gulpfile.png" alt="gulp_shell_gulpfile">
+				<p>
+					Создаем task dist с пакетом shell который задает последовательность выполнения задач
+				</p>
+				<img src="img/task_dist.png" alt="task_dist">
+				<p>
+					После создания таска dist проверяем правильно ли работает наш таск вводим в командной строке windows: gulp dist
+				</p>
+				<img src="img/gulp_dist.png" alt="gulp_dist"><br>
+				<img src="img/gulp_dist1.png" alt="gulp_dist">
+				<p>
+					операция gulp dist поочередно запускает:<br>
+					//1. запускаем удаление папки продакшена<br>
+    			//2. запускаем task images<br>
+    			//3. запускаем task html<br>
+    			//4. запускаем task fonts<br>
+    			//5. запускаем task css<br>
+    			//6. запускаем task js<br>
+				</p>
+				<p>
+					Устанавливаем пакет browser-sync который, запускает локальный сервер.Для этого вводим в командной строке windows: npm install browser-sync --save-dev
+				</p>
+				<img src="img/bs.png" alt="browser-sync">
+				<p>
+					Подключаем browser-sync в gulpfile.js
+				</p>
+				<img src="img/bs_gulpfile.png" alt="browsersync">
+				<p>
+					Создаем таск browser-sync  
+				</p>
+				<img src="img/task_bs.png" alt="task_bs">
+				<p>
+					Добавляем в таски <strong>js, styles, html</strong> строку:<br>.pipe(reload({stream: true}));=> Перезагрузка тех файлов за которыми мы следим
+				</p>
+				<img src="img/reload.png" alt="reload">
+				<p>
+					После создания таска browser-sync проверяем правильно ли работает наш таск вводим в командной строке windows: gulp browser-sync
+				</p>
+				<img src="img/gulp_browser-sync.png" alt="gulp_browser-sync">
+				<p>
+					Запустился локальный сервер
+				</p>
+				<p>
+					Добавим переменные для выбора версии gulp и для выбора синтаксиса sass
+				</p>
+				<img src="img/const.png" alt="синтаксис sass и выбор версии gulp">
+				<p>
+				<p>	
+					Создаем таск watch для старой версии gulp который отработает если
+					выполнится условие  (gulpversion == 3). Он будет мониторить файловую систему 
+					и обновлять браузер при изменении в файлах
+				</p>
+				<img src="img/gulp3_watch.png" alt="watch">
+
+				<p>
+					Создаем таск watch для новой версии gulp который отработает если
+					выполнится условие  (gulpversion == 4). Он будет мониторить файловую систему 
+					и обновлять браузер при изменении в файлах
+				</p>
+				<img src="img/watch_gulp4.png" alt="default">
+				
+					Устанавливаем следующий gulp пакет, gulp-notify - который будет отслеживать ошибки. Для этого вводим в командной строке windows: npm install gulp-notify --save-dev 
+				</p>
+				<img src="img/gulp-notify.png" alt="gulp-notify">
+				<p>
+					Подключаем gulp-notify в gulpfile.js
+				</p>
+				<img src="img/const_gulp_notify.png" alt="const_gulp_notify">
+				<p>
+					Теперь нужно дописать строку в таск styles:<br>.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
+				</p>
+				<img src="img/customize_styles.png" alt="customize_styles">
+				<p>
+					Устанавливаем следующий gulp пакет, gulp-autoprefixer - который автоматически добавляет автопрефиксы. Для этого вводим в командной строке windows: npm install gulp-autoprefixer --save-dev 	
+				</p>
+				<img src="img/gulp-autoprefixer.png" alt="gulp-autoprefixer">
+				<p>
+					Подключаем gulp-autoprefixer в gulpfile.js
+				</p>
+				<img src="img/const_autoprefix.png" alt="const_autoprefix">
+				<p>
+					Теперь нужно дописать строку в таск styles:<br>.pipe(autoprefixer(['last 15 versions']))
+				</p>
+				<img src="img/autoprefixer_styles.png" alt="autoprefixer_styles">
+				<p>
+					Следует помнить, что нужно правильно подключить стили и скрипты, правильно указать путь к файлам.
+				</p>
+				<img src="img/css.png" alt="подключение стилей">
+				<p>
+					Следует помнить что стили подключаются из папочки dist/css/main.css
+				</p>
+				<p>
+					Скрипты подключаются аналогично
+				</p>
+				<img src="img/script.png" alt="подключение скриптов">
+				<p>
+					Теперь в командной строке windows вводим gulp и происходит магия!!!!!!!!!!!!! После каких либо изменений не забываем нажимать 	<strong>ctrl+s</strong>
+				</p>
+				<h2>Подключение плагина slick-carousel</h2>
+				<p>
+					Установим <strong>slick-carousel</strong> для этого вводим в командной строке: <strong>npm i slick-carousel --save</strong><br> 
+					Ключ <strong>--save</strong> для того чтобы он установился в наши зависимости.
+				</p>
+				<img src="img/slick-carousel.png" alt="slick-carousel">
+				<p>
+					Подключаем <strong>slick-carousel</strong>. Для удобства работы, копируем папку <strong>slick-carousel</strong> из папки <strong>node_modules</strong> в папку libs
+				</p>
+				<img src="img/libs_slick-carousel.png" alt="libs_slick-carousel">
+				<p>
+					В <strong>gulpfile.js</strong> подключаем slick-carousel, для этого добавляем строчку: <strong>'app/libs/slick-carousel/slick/slick.min.js',</strong> 
+				</p>
+				<img src="img/s-c1.png" alt="Подключение slick-carousel в gulpfile.js"><br>
+				<img src="img/s-c2.png" alt="Подключение slick-carousel в gulpfile.js">
+				<p>
+					В папке sass/scss в файле _libs.sass/_libs.scss подключаем стили. для этого добавляем строчку
+				</p>
+				<img src="img/libs_sass.png" alt="подключение стилей">
+				<p>
+					Для этого в файл <strong>_libs.sass/_libs.scss</strong>	добавляем строчку: <strong>@import "../libs/slick-carousel/slick/slick.scss"</strong>
+				</p>
+				<img src="img/libs_slick_sass.png" alt="подключение стилей">
+				<img src="img/slick_scss.png" alt="подключение стилей">
+			</div>
+			<h2>Для проверки работы плагина, создадим свою карусель</h2>
+			<div class="slick-slider">
+  			<div class="slick-slider__slide">
+  				<img class="slick-slider__img" src="img/sl1.jpg" alt="Картинка слайда 1">
+  				<div class="slick-slider__text">
+  					<h4 class="slick-slider__title">
+  						слайд1 
+  					</h4>
+  					<p class="slick-slider__desc">
+  						Описание слайда №1
+  					</p>
+  				</div>
+  			</div>
+  			<div class="slick-slider__slide">
+  				<img class="slick-slider__img" src="img/sl2.jpg" alt="Картинка слайда 2">
+  				<div class="slick-slider__text">
+  					<h4 class="slick-slider__title">
+  						слайд2 
+  					</h4>
+  					<p class="slick-slider__desc">
+  						Описание слайда №2
+  					</p>
+  				</div>
+  			</div>
+  			<div class="slick-slider__slide">
+  				<img class="slick-slider__img" src="img/sl3.jpg" alt="Картинка слайда 3">
+  				<div class="slick-slider__text">
+  					<h4 class="slick-slider__title">
+  						слайд3 
+  					</h4>
+  					<p class="slick-slider__desc">
+  						Описание слайда №3
+  					</p>
+  				</div>
+  			</div>
+  			<div class="slick-slider__slide">
+  				<img class="slick-slider__img" src="img/sl4.jpg" alt="Картинка слайда 4">
+  				<div class="slick-slider__text">
+  					<h4 class="slick-slider__title">
+  						слайд4 
+  					</h4>
+  					<p class="slick-slider__desc">
+  						Описание слайда №4
+  					</p>
+  				</div>
+  			</div>
+  			<div class="slick-slider__slide">
+  				<img class="slick-slider__img" src="img/sl5.jpg" alt="Картинка слайда 5">
+  				<div class="slick-slider__text">
+  					<h4 class="slick-slider__title">
+  						слайд5
+  					</h4>
+  					<p class="slick-slider__desc">
+  						Описание слайда №5
+  					</p>
+  				</div>
+  			</div>
+  			<div class="slick-slider__slide">
+  				<img class="slick-slider__img" src="img/sl6.jpg" alt="Картинка слайда 6">
+  				<div class="slick-slider__text">
+  					<h4 class="slick-slider__title">
+  						слайд6
+  					</h4>
+  					<p class="slick-slider__desc">
+  						Описание слайда №6
+  					</p>
+  				</div>
+  			</div>  			  			  			  			
+			</div>
+
+			<section class="s-banner">
+				<div class="banner">
+					<div class="banner__navigation banner__navigation_prev">
+						
+					</div>
+					<!-- /.banner__navigation banner__navigation_prev -->
+					<div class="banner__navigation banner__navigation_next">
+						
+					</div>
+					<!-- /.banner__navigation banner__navigation_next -->
+					<div class="js-banner">
+						<div class="banner__item">
+							
+						</div>
+						<!-- /.banner__item -->
+					
+					</div>
+					<!-- /.js-banner -->
+				</div>
+				<!-- /.banner -->
+			</section>
+			<!-- /.s-banner -->
+												
+			<h2>Подключение Font Awesome 5 с хранением файлов на своем хостинге (CSS)</h2>
+			<p>Для начала нужно скачать файлы Font Awesome и разместить их на свой хостинг. Для этого переходим по этой ссылке  <a href="https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself" target="_blank" rel="nofollow noopener">https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself</a> или скачиваем по прямой <a href="https://use.fontawesome.com/releases/v5.5.0/fontawesome-free-5.5.0-web.zip" target="_blank" rel="nofollow noopener">ссылке</a>.</p>
+			<p>
+				После скачивания получаем архив с файлами, как на скриншоте:
+			</p>
+			<img src="img/fontawesome_folder.png" alt="fontawesome">
+			<p>
+				Для работы иконочного шрифта необходимы только папки выделенные красным. И то в паке /CSS нам нужен только один файл css/all.min.css:
+			</p>
+			<img src="img/all_min_css.png" alt="иконочный шрфт">
+			<p>
+				Файл <strong>all.min.css</strong> хранит все стили шрифта Font Awesome. Если использовать только бесплатный иконочный шрифт,  достаточно подключить файл fontawesome.min.css.
+			</p>
+			<p>
+				<strong>.min</strong>.min в названии файла показывает, что файл сжат, то есть убраны лишние пробелы и переносы. Это увеличивает скорость обработки этого файла. 
+			</p>
+			<p>
+				Переносим папку <strong>webfont</strong> и файл <strong>all.min.css</strong> на свой хостинг.
+			</p>
+			<p>
+				Папку <strong>css</strong> помещаем в папку <strong>fontawesome</strong> которая лежит в папке libs	
+			</p>
+			<img src="img/path_css_fa.png" alt="path-folder">
+			<p>
+				Далее шрифты которые лежат в папке <strong>webfonts</strong> помещаем в папочку <strong>fontawesome</strong> которая лежит в папке fonts.
+			</p>
+			<img src="img/fonts_fa.png" alt="fonts_fa">
+			<p>
+				И остался последний шаг подключить, файл <strong>all.min.css</strong> в наш проект, переходим в файл <strong>_libs.sass/_libs.scss</strong> и подключаем наш файл
+			</p>
+			<img src="img/_libs_sass_scss.png" alt="подключение fontawesome">
+			<p>
+				Заходим в файл <strong>all.min.css</strong> и проверяем чтобы путь к шрифтам, указанный в файле, соответствовал пути где у нас лежат шрифты
+			</p>
+			<img src="img/path_fonts.png" alt="path_fonts">
+			<p>
+				Подключим иконку для проверки, как видим иконка подключилась все работает.
+			</p>
+			<p>
+				<i class="fas fa-clone"></i>
+		
+			</p>
+
+			<h2>Подключение шрифтов к проекту</h2>
+			<p>
+				Для начала скачиваем необходимые нам шрифты. Затем переходим по этой <a href="https://www.fontsquirrel.com/tools/webfont-generator">ссылке</a>, для конвертации шрифта, в необходимые форматы. Выбираем <strong>upload fonts</strong> и загружаем подготовленные нами шрифты. 
+			</p>
+			<p>
+				Когда шрифт загрузился, выбираем кнопочку  <strong>EXPERT</strong> и активируем чекбоксы с необходимыми нам форматами шрифтов:
+			</p>
+			<img src="img/upload_fonts.png" alt="upload_fonts">
+			<p>
+				Опускаемся ниже до вкладки <strong>Subsetting:</strong> и активируем чекбокс <strong>Custom Subsettings</strong>, после чего активируем еще два чекбокса <strong>Cyrillic, English</strong>
+			</p>
+			<img src="img/custom_subsetings.png" alt="custom_subsetings">
+			<p>
+				Опускаемся ниже делаем еще несколько изминений и нажимаем кнопку <strong>download your kit</strong>
+			</p>
+			<img src="img/download.png" alt="download">
+			<p>
+				Из загруженой папки берем шрифты:
+			</p>
+			<img src="img/upload_fonts.png" alt="upload_fonts">
+			<p>
+				В папке <strong>fonts</strong> нашего проекта, создаем папку с названием нашего шрифта, и переименовываем наши шрифты, так, чтобы все смотрелось красиво.
+			</p>
+			<img src="img/fonts_custom.png" alt="fonts_custom">
+			<p>
+				Подключаем наши шрифты в файле <strong>_libs.scss/_libs_sass</strong>
+			</p>
+			<img src="img/fonts_install.png" alt="fonts_install">
+			<p>
+				Основные начертания шрифтов:
+			</p>
+			<img src="img/font-weight.png" alt="font-weight">
+			<p class="lato-bold">Вася подай патроны<span> - LatoBold</span></p>
+			<p class="lato-regular">Вася подай патроны<span> - LatoRegular</span></p>
+			<p class="lato-italic">Вася подай патроны<span> - LatoItalic</span></p>
+			<p class="euroregular">Вася подай патроны<span> - EurostileRegular</span></p>
+			<p class="eurobold">Вася подай патроны<span> - EurostileBold</span></p>
+		</section>
+	</main>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+//.search
+.search
+	display: flex 
+	align-items: center
+	.fas.fa-search
+		font-size: 16px
+	.input-field
+		flex: 0 0 220px
+	& > *
+		&:not(:last-child)
+			margin-right: 10px
+////////////////////////////////////
+
+//.order-callback
+.order-callback
+	display: flex 
+	flex-direction: column
+	&__description
+		font-size: 12px
+	&__link
+		color: $white
+		font-size: 14px
+	&__phone
+		color: $accent
+		font-size: 24px
+		font-weight: bold
+		line-height: 1.5
+		white-space: nowrap
+///////////////////////////////////////////////////
+.title
+	&-page
+		font-size: 40px
+		line-height: 1.25
+////////////////////////////////////////
+.section-header
+	.title-section
+		font-size: 40px
+		line-height: 1.25	
+.s-popular-categories
+	padding-bottom: 10px
+///////////////////////////////////////////////////
+.s
+	&-bg-white
+		background-color: $white
+	&-sales-leaders
+		padding-bottom: 20px
+	&-size-small
+		padding: 10px 0
+////////////////////////////////////////////////
+.section-header 
+	display:  flex 
+	align-items: center
+	margin-bottom: 20px 
+	&__right
+		margin-left: auto 
+	&__count
+		color: $textInfoColor
+		font-size: 14px
+		margin-left: 5px
+/////////////////////////////////////////////////////////
+.slider-nav
+	i 
+		&.fa-angle-left
+			left: 10%
+		&.fa-angle-right
+			right: 10%
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		cursor: pointer
+		opacity: .5
+		transition: all linear .3s
+		font-size: 55px
+		&:hover
+			opacity: 1
+		.fa-angle-left
+			left: 0
+		.fa-angle-right
+			right: 0
+	&.slick-disabled
+		cursor: default 
+		&:hover
+			opacity: .5
+///////////////////////////////////////
+.upgrade
+	display: flex 
+	font-size: 14px
+	align-items: center
+	& > * 
+		&:not(:last-child)
+			margin-right: 10px
+	&__icon
+		&-wrapper
+			border-radius: 50%
+			background-color: $textInfoColor
+			font-size: 16px
+			display: flex 
+			justify-content: center 
+			align-items: center 
+			i 
+				font-size: 14px
+////////////////////////////////////////////
+.questions 
+	align-items: center
+	display: flex 
+	justify-content: space-between
+	.ask-your-question
+		align-items: center
+		display: flex
+		& > * 
+			&:not(:last-child)
+				margin-right: 30px
+		&__list
+			display: flex 
+			align-items: center 
+			& > * 
+				&:not(:last-child)
+					margin-right: 20px
+		&__link
+			align-items: center
+			display: flex
+			& > * 
+				&:not(:last-child)
+					margin-right: 10px
+			i 
+				font-size: 14px

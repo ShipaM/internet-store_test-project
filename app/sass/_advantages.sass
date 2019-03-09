@@ -1,0 +1,30 @@
+.advantages
+	display: flex 
+	& > * 
+		flex: 1
+		&:not(:last-child)
+			margin-right: 30px
+.advantage
+	display: flex 
+	& > * 
+		&:not(:last-child)
+			margin-right: 15px
+	&__aside
+		color: $accent
+		font-size: 64px
+	&__body
+		display: flex 
+		flex-direction: column 
+	&__title
+		margin-bottom: 4px
+	&__text
+		color: #bababa
+		font-size: 14px
+		letter-spacing: .25px
+	&__link
+		font-size: 14px
+		margin-top: 8px
+		letter-spacing: .25px
+		text-decoration: underline
+		
+		
